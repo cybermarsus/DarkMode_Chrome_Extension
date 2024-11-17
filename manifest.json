@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Dark Mode",
+  "description": "Enable dark mode on most web sites.",
+  "version": "1.0",
+  "background": {
+    "service_worker": "dark_mode.js"
+  },
+  "action": {
+    "default_icon": "images/kuu_48.png"
+    
+  },
+  "permissions": ["activeTab", "scripting"],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
+    }
+  }
+}
